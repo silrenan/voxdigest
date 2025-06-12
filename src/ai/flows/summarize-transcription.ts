@@ -53,7 +53,9 @@ const summarizeTranscriptionPrompt = ai.definePrompt({
   output: {schema: SummarizeTranscriptionOutputSchema},
   prompt: `Summarize the following audio transcription. Extract key concepts, important quotes, and key facts.
 
-After this, identify the main subject or topics discussed in the transcription. Based on your knowledge up to your last update, provide a brief overview of any recent developments, current discussions, or relevant context pertaining to these main subjects. Present this under a section titled "Latest on this Matter".
+After this, identify the main subject or topics discussed in the transcription. Based on your knowledge up to your last update, provide an overview of any recent developments, current discussions, or relevant context pertaining to these main subjects. Present this under a section titled "Latest on this Matter".
+
+Then, write a student-friendly summary that explains how the key points, quotes, and facts connect to each other, and how they work together to form the basis for the TL;DR summary. Use clear and accessible language suitable for students.
 
 Finally, provide a TL;DR summary that incorporates the essence of the transcription and any significant points from the "Latest on this Matter" section.
 
