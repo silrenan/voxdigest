@@ -5,6 +5,8 @@
 
 VoxDigest is a Next.js application designed to transcribe and summarize audio files using AI. It leverages Genkit with Google's Gemini models for AI-powered transcription, summarization, image generation, and quote generation.
 
+[![Watch the demo](https://img.youtube.com/vi/SUkdktG9_Ik/0.jpg)](https://youtu.be/SUkdktG9_Ik)
+
 ## Features
 
 -   Upload .mp3 audio files.
