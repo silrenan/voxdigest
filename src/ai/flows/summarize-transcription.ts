@@ -55,6 +55,8 @@ const summarizeTranscriptionPrompt = ai.definePrompt({
 
 After this, identify the main subject or topics discussed in the transcription. Based on your knowledge up to your last update, provide a brief overview of any recent developments, current discussions, or relevant context pertaining to these main subjects. Present this under a section titled "Latest on this Matter".
 
+Then, provide a student-friendly summary designed to help someone study or review the material. Make it clear, concise, and easy to understand, specially on how important points connect.
+
 Finally, provide a TL;DR summary that incorporates the essence of the transcription and any significant points from the "Latest on this Matter" section.
 
 Transcription: {{{transcription}}}`,
