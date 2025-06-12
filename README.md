@@ -1,3 +1,4 @@
+[![Dependabot Updates](https://github.com/silrenan/studio/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/silrenan/studio/actions/workflows/dependabot/dependabot-updates)
 
 # VoxDigest
 
