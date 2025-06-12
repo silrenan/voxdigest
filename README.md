@@ -45,8 +45,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 1.  **Clone the repository:**
     If you've cloned this project from GitHub or another source, navigate to the project directory.
     ```bash
-    git clone <repository-url>
-    cd VoxDigest
+    git clone https://github.com/silrenan/voxdigest
+    cd voxdigest
     ```
 
 2.  **Install dependencies:**
@@ -64,7 +64,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```env
     GOOGLE_API_KEY=YOUR_GEMINI_API_KEY_HERE
     ```
-    Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key.
+    Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key. API key currently can be obtained [here](https://aistudio.google.com/app/apikey).
 
     **Important Security Note:** The `.env` file contains sensitive information. Ensure that `.env` is listed in your `.gitignore` file to prevent it from being committed to version control. A standard Next.js project usually includes this by default.
 
@@ -99,15 +99,15 @@ You should now be able to use VoxDigest locally!
 
 ## How It Works
 
-1.  The user uploads an .mp3 file through the interface.
+1.  The user uploads an .mp3 file through the interface. (use [ffmpeg](https://ffmpeg.org/) for handle any convertion, if needed).
 2.  The Next.js frontend converts the file to a data URI.
 3.  When "Transcribe & Summarize" is clicked:
-    a.  A request is made to the `generateImageFlow` to create a new visual.
-    b.  A request is made to the `generateInspirationalQuoteFlow` for a new quote.
-    c.  The audio data URI is sent to the `transcribeAudioFlow` Genkit flow.
-    d.  The Genkit flow uses a Gemini model to transcribe the audio to text.
-    e.  If transcription is successful, the resulting text is automatically sent to the `summarizeTranscriptionFlow`.
-    f.  This flow uses a Gemini model to generate a structured summary, including key concepts, quotes, facts, recent context ("Latest on this Matter"), and a TL;DR.
+    -  A request is made to the `generateImageFlow` to create a new visual.
+    -  A request is made to the `generateInspirationalQuoteFlow` for a new quote.
+    -  The audio data URI is sent to the `transcribeAudioFlow` Genkit flow.
+    -  The Genkit flow uses a Gemini model to transcribe the audio to text.
+    -  If transcription is successful, the resulting text is automatically sent to the `summarizeTranscriptionFlow`.
+    -  This flow uses a Gemini model to generate a structured summary, including key concepts, quotes, facts, recent context ("Latest on this Matter"), and a TL;DR.
 4.  The transcription and summary are displayed in the UI.
 5.  The user can download the combined output as a Markdown file.
 
@@ -126,4 +126,3 @@ In the project directory, you can run:
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-```
