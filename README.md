@@ -1,4 +1,5 @@
 [![Dependabot Updates](https://github.com/silrenan/studio/actions/workflows/dependabot/dependabot-updates/badge.svg?branch=main)](https://github.com/silrenan/studio/actions/workflows/dependabot/dependabot-updates)
+[![CodeQL](https://github.com/silrenan/voxdigest/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/silrenan/voxdigest/actions/workflows/github-code-scanning/codeql)
 
 # VoxDigest
 
